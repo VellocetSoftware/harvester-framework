@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ComponentUtils" inherits="RefCounted" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../doc/class.xsd">
+	<brief_description>
+		Utility class for working with components in Godot.
+	</brief_description>
+	<description>
+		The ComponentUtils class provides static methods for manipulating components attached to Godot objects. It allows you to get, add, and remove components from an object.
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+		<method name="add_component" qualifiers="static">
+			<return type="void" />
+			<param index="0" name="object" type="Object" />
+			<param index="1" name="component" type="Object" />
+			<description>
+				Adds the given component to the object.
+			</description>
+		</method>
+		<method name="get_component" qualifiers="static">
+			<return type="Object" />
+			<param index="0" name="object" type="Object" />
+			<param index="1" name="component_name" type="String" />
+			<param index="2" name="assert_exists" type="bool = false"/>
+			<description>
+				Returns the component with the given name attached to the object. Exact type name is prioritized followed by base class type. If the component does not exist and [param assert_exists] is true (defaulted to false), an error will be thrown.
+			</description>
+		</method>
+		<method name="remove_component" qualifiers="static">
+			<return type="void" />
+			<param index="0" name="object" type="Object" />
+			<param index="1" name="component_name" type="String" />
+			<description>
+				Removes the component with the given name from the object.
+			</description>
+		</method>
+	</methods>
+</class>

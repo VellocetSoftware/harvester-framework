@@ -1,0 +1,14 @@
+# Godot 4+ specific ignores
+.godot/
+android/
+.DS_Store
+bin/
+*.gen.*
+*.o
+*.os
+*.so
+*.bc
+*.pyc
+*.dblite
+*.pdb
+*.lib

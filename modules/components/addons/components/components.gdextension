@@ -1,0 +1,21 @@
+[configuration]
+
+entry_symbol = "components_library_init"
+compatibility_minimum = 4.3
+
+[libraries]
+
+macos.debug = "bin/libcomponents.macos.debug.framework"
+macos.release = "bin/libcomponents.macos.release.framework"
+windows.debug.x86_64 = "bin/libcomponents.windows.debug.x86_64.dll"
+windows.release.x86_64 = "bin/libcomponents.windows.release.x86_64.dll"
+linux.debug.x86_64 = "bin/libcomponents.linux.debug.x86_64.so"
+linux.release.x86_64 = "bin/libcomponents.linux.release.x86_64.so"
+linux.debug.arm64 = "bin/libcomponents.linux.debug.arm64.so"
+linux.release.arm64 = "bin/libcomponents.linux.release.arm64.so"
+linux.debug.rv64 = "bin/libcomponents.linux.debug.rv64.so"
+linux.release.rv64 = "bin/libcomponents.linux.release.rv64.so"
+
+[icons]
+
+ComponentUtils = "icons/ComponentUtils.svg"
