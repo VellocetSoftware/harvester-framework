@@ -24,5 +24,8 @@ protected:
 public:
 	static void add_component(Object *p_object, Object *p_component);
 	static Object *get_component(Object *p_object, const Variant &p_component_type, bool p_assert_exists = false);
+	static Array get_components_recursive(Object *p_object, const Variant &p_component_type);
+	static Array get_components(Object *p_object, const Variant &p_component_type);
+	static Object *get_component_recursive(Object* p_object, const Variant& p_component_type, bool p_assert_exists = false);
 	static void remove_component(Object *p_object, const String &p_component_name);
 };
